@@ -42,7 +42,7 @@ Você pode usar o portal do Azure para definir as configurações de rede do Azu
    |**Detalhes da instância**|
    |Nome do cofre de chaves|Insira **AZAPLKeyVault.**|
    |Região|Selecione **Leste dos EUA**|
-   |Tipo de preços|Padrão do sistema **Standard**|
+   |Tipo de preço|Padrão do sistema **Standard**|
    |Dias de retenção dos cofres excluídos|Padrão do sistema **90**|
 
 7. Selecione a guia **Revisar + criar** ou selecione o botão azul Revisar + criar na parte inferior da página.
@@ -55,7 +55,7 @@ Você pode usar o portal do Azure para definir as configurações de rede do Azu
 
 2. Navegue até o cofre de chaves criado anteriormente.
 
-3. Selecione **Rede** e a guia **Firewalls e redes virtuais**.
+3. Selecione **Rede** e, em seguida, a guia **Firewalls e redes virtuais**.
 
 4. Em Permitir acesso de, selecione **Permitir acesso público de redes virtuais e endereços IP específicos.**
 

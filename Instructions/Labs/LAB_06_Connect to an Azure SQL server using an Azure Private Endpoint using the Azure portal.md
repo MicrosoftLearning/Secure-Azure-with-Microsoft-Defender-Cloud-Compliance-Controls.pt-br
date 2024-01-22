@@ -26,7 +26,7 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
 
 ### Criar um grupo de recursos e uma rede virtual.
 
->****: o bastion host será usado para se conectar com segurança à máquina virtual para testar o ponto de extremidade privado.
+>**Observação**: O host bastion será usado para se conectar com segurança à máquina virtual para testar o ponto de extremidade privado.
 
 1. Abra uma sessão do navegador e entre no [menu do portal do Azure](https://portal.azure.com/).
    
@@ -43,36 +43,45 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    |Resource group|Selecione **Criar novo**. Insira **CreateSQLEndpointTutorial.** Selecione **OK**|
    |**Detalhes da instância**|
    |Nome da rede virtual|Insira **myVNet1a.**|
-   |Region|Selecione **Leste dos EUA**.|  
+   |Região|Selecione **(EUA) Leste dos EUA**.|  
     
-5. Selecione a guia **Endereços IP** ou selecione o botão **Avançar: Endereços IP** na parte inferior da página.
+5. Selecione **Avançar** para prosseguir para a guia **Segurança**.
+  
+6. Selecione **Habilitar o Azure Bastion** na seção Azure Bastion da guia Segurança.
 
-6. Na guia **Endereços IP**, insira estas informações:
+   >**Observação**: O Azure Bastion usa seu navegador para se conectar a VMs em sua rede virtual por SSH (secure shell) ou RDP (protocolo de área de trabalho remota) usando seus endereços IP privados. As VMs não precisam de endereços IP públicos, software cliente ou configuração especial.
+
+7. Insira ou selecione as seguintes informações no campo **Nome do host do Azure Bastion**:
 
    |Configuração|Valor|
    |---|---|
-   |Espaço de endereço IPv4|Insira **10.1.0.0/16**.|
+   |Nome do host do Azure Bastion|Insira **mybastionhost**|
+   |Nome do endereço IP público do Azure Bastion|Selecione **Criar um endereço IP público**|
+   |Adicionar um endereço IP público|Insira **my-bstn-public-ip**|
+   |SKU|Mantenha o padrão **Standard**|
+   
+8. Selecione **OK**.
 
-7. Em **Nome da sub-rede**, selecione a palavra **padrão**.
+9. Selecione **Avançar** para prosseguir para a guia **Segurança**.
 
-8. Em **Editar sub-rede**, insira estas informações:
+10. Selecione **Avançar** para prosseguir para a guia **Endereços de IP**.
+
+11. Na caixa de espaço de endereço na coluna Sub-redes, selecione a palavra sub-rede **padrão**.
+
+12. No modelo **Editar sub-rede**, insira ou selecione as seguintes informações:
 
    |Configuração|Valor|
    |---|---|
-   |Nome da sub-rede|Insira **mySubnet1a.**|
-   |Intervalo de endereços da sub-rede|Insira **10.1.0.0/24**.|
+   |Finalidade da sub-rede|Mantenha o padrão como **Padrão.**|
+   |Nome|Insira **mysubnet1a**|
+   |Intervalo de endereços IPv4|Mantenha o padrão de **10.0.0/16**|
+   |Endereço inicial|Mantenha o padrão de **/24 (256 endereços**|
 
-9. Selecione **Salvar**.
+13. Selecione **Salvar**.
 
-10. Selecione a guia **Segurança**.
+14. Selecione **Examinar + criar** na parte inferior da tela e, quando a validação for aprovada, selecione **Criar**.
 
-11. Em **Bastion host**, selecione **Habilitar**. Insira estas informações:
-    
-    |Configuração|Valor|
-    |---|---|
-    |Nome do bastion|Insira **myBastionHost**.|
-    |Espaço de endereço da AzureBstionSubnet|Insira **10.1.1.0/24**.|
-    |Endereço IP público|Selecione **Criar novo**. Em **Nome**, insira **My BastionIP.** Selecione **OK**.| 
+    >**Observação**: A implantação do Bastion pode levar até 15 minutos para a instanciação completa.
  
 ### Crie uma máquina virtual.
 
@@ -86,7 +95,7 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    |---|---|
    |**Detalhes do projeto**|
    |Assinatura|Selecionar sua assinatura|
-   |Resource group|Selecione **CreateSQLEndpointTutorial**.|
+   |Grupo de recursos|Selecione **CreateSQLEndpointTutorial**.|
    |**Detalhes da instância**|
    |Nome da máquina virtual|Insira a opção **myVM**.|
    |Região|Selecione **(EUA) Leste dos EUA**.|

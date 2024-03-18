@@ -99,8 +99,8 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    |**Detalhes da instância**|
    |Nome da máquina virtual|Insira a opção **myVM**.|
    |Região|Selecione **(EUA) Leste dos EUA**.|
-   |Opções de disponibilidade|Deixe o padrão **Nenhuma redundância de infraestrutura necessária**.|
-   |Tipo de segurança|Deixe o padrão de **Standard**.|
+   |Opções de disponibilidade|No menu suspenso Zona de disponibilidade, selecione **Não é necessária redundância de infraestrutura.**|
+   |Tipo de segurança|No menu suspenso Tipo de segurança, selecione **Standard.**|
    |Imagem|Selecione **Windows Server 2022 Datacenter – x64 Gen2**.|
    |Arquitetura de VMs;|Selecione **x64**.|
    |Executar com desconto do Spot do Azure|Deixe o padrão de desmarcado|
@@ -189,7 +189,7 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    |Resource group|Selecione **CreateSQLEndpointTutorial**.|
    |Location|Selecione **Leste dos EUA**.|
    |Nome|Insira **myPrivateSQLendpoint**.|
-   |Sub-recurso de destino|Selecione **mysqlserver1a.**|
+   |Sub-recurso de destino|Deixe o padrão Padrão **SqlServer.**|
    |**Rede**|
    |Rede virtual|Selecione **myVNet1a.**|
    |Sub-rede|Selecione **mySubnet1a.**|

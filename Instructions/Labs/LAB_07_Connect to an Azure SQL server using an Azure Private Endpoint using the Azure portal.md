@@ -74,7 +74,7 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    |---|---|
    |Finalidade da sub-rede|Mantenha o padrão como **Padrão.**|
    |Nome|Insira **mysubnet1a**|
-   |Intervalo de endereços IPv4|Mantenha o padrão de **10.0.0/16**|
+   |Intervalo de endereços IPv4|Deixe o padrão de **10.0.0.0**|
    |Endereço inicial|Mantenha o padrão de **/24 (256 endereços**|
 
 13. Selecione **Salvar**.

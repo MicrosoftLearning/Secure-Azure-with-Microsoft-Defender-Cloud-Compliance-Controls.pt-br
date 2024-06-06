@@ -40,7 +40,7 @@ Você pode usar o portal do Azure para definir as configurações de rede do Azu
    |Subscription|Selecione sua assinatura.|
    |Resource group|Insira **az-rg-1.** Selecione **OK**|
    |**Detalhes da instância**|
-   |Nome do cofre de chaves|Insira **AZAPLKeyVault.**|
+   |Nome do cofre de chaves|O nome do cofre precisa conter apenas caracteres alfanuméricos e traços e não pode começar com um número.|
    |Região|Selecione **Leste dos EUA**|
    |Tipo de preço|Padrão do sistema **Standard**|
    |Dias de retenção dos cofres excluídos|Padrão do sistema **90**|

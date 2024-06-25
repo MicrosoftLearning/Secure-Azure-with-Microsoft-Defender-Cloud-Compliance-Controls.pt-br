@@ -1,7 +1,7 @@
 ---
 lab:
-  title: Exercício 04 – Coletar dados de suas cargas de trabalho com o agente do Log Analytics
-  module: Module 04 - Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
+  title: Exercício 04 - Configurar e integrar um agente e espaço de trabalho do Log Analytics no Defender para Nuvem
+  module: Module 05 - Configure and integrate a Log Analytics agent and workspace in Defender for Cloud
 ---
 
 

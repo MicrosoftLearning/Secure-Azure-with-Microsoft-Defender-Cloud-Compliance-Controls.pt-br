@@ -259,13 +259,13 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
  
 3. Escolha **Rede** na seção **vm-1**
 
-4. Selecione a guia **Grupos de segurança do aplicativo** e escolha **Configurar os grupos de segurança do aplicativo**
+4. Selecione a guia **Grupos de segurança de aplicativo** e selecione **+ Adicionar grupos de segurança do aplicativo**.
 
-5. No modelo **Configurar os Grupos de Segurança do Aplicativo**, escolha **asg-mgmt** no menu suspenso **Grupos de Segurança do Aplicativo** e clique no ícone **Salvar** na parte superior da página do modelo.
+5. No modelo **Adicionar grupos de segurança do aplicativo**, escolha **asg-mgmt**, no modelo **Grupos de Segurança do Aplicativo** e clique no ícone **Adicionar** na parte inferior da página do modelo.
 
 ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/assets/91347931/dd17aeba-8e16-431b-b921-527367fea484)
 
-6. Repita as etapas anteriores para **vm-2**, selecionando **asg-web** no menu suspenso **Grupos de segurança do aplicativo**.
+6. Repita as etapas anteriores para a **vm-2** selecionando **asg-web** no modelo **Grupos de segurança do aplicativo**.
 
 > **Resultados**: você criou uma infraestrutura de rede virtual e filtrou o tráfego de rede com um grupo de segurança de rede usando o portal do Azure.
 

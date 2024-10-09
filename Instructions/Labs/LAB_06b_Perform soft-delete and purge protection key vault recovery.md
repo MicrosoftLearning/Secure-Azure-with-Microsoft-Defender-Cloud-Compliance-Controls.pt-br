@@ -28,11 +28,11 @@ Você pode usar a proteção contra limpeza para impedir a exclusão de seu cofr
    
 2. Selecione seu cofre de chaves.
 
-3. Clique no painel **Propriedades**.
+3. Na folha **Configurações**, selecione **Propriedades**.
 
-4. Verifique se o botão de opção ao lado de exclusão temporária está definido como **Habilitar proteção contra limpeza.**
+4. Verifique se o botão de opção ao lado da exclusão temporária está definido como **Ativar proteção contra limpeza (impor um período de retenção obrigatório para cofres e objetos de cofre excluídos).**
 
-5. Se a exclusão temporária não estiver habilitada no cofre de chaves, clique no botão de opção para habilitá-la e clique em **Salvar.**
+5. Se a exclusão temporária não estiver habilitada no cofre de chaves, clique no botão de opção **Habilitar proteção contra limpeza (impor um período de retenção obrigatório para cofres e objetos de cofre excluídos)** para habilitar a exclusão temporária e clique em **Salvar**.
 
 ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/06131a60-7f00-4764-a424-87ea41a78394)
 
@@ -45,7 +45,7 @@ Você pode usar a proteção contra limpeza para impedir a exclusão de seu cofr
 
 3. Pesquise pelo serviço **Key Vault**. Não clique em um cofre de chaves individual.
 
-4. Na parte superior da tela, clique na opção "Gerenciar cofres excluídos"
+4. Na parte superior da tela, clique na opção **Gerenciar cofres excluídos**.
 
 5. Será aberto um painel de contexto do lado direito da tela.
 

@@ -55,14 +55,16 @@ Você pode usar o portal do Azure para definir as configurações de rede do Azu
 
 2. Navegue até o cofre de chaves criado anteriormente.
 
-3. Selecione **Rede** e, em seguida, a guia **Firewalls e redes virtuais**.
-
+3. Clique em **Configurações**, **Rede** e na guia **Firewalls e redes virtuais**.
+   
 4. Em Permitir acesso de, selecione **Permitir acesso público de redes virtuais e endereços IP específicos.**
 
 5. Na seção Redes virtuais, selecione + **Adicionar uma rede virtual** e, em seguida, selecione + **Adicionar redes virtuais existentes.**
 
 6. No modelo Adicionar redes, selecione sua rede virtual criada anteriormente na lista suspensa **Redes virtuais** e na lista suspensa **Sub-redes**.
 
-7. Na parte inferior do modelo Adicionar redes, clique em **Adicionar.**
+7. Na parte inferior do modelo **Adicionar redes**, clique em **Adicionar**.
+
+8. Na parte inferior da guia **Firewalls e redes virtuais**, clique em **Aplicar**.
 
   > **Resultados**: você criou um cofre de chaves e definiu as configurações de firewall e de rede virtual do cofre de chaves no portal do Azure.

@@ -34,7 +34,7 @@ Quando você coleta logs e dados, as informações são armazenadas em um worksp
    |---|---|
    |**Detalhes do projeto**|
    |Subscription|Selecione sua assinatura.|
-   |Resource group|Digite **azure-rg-1.** Selecione **OK**|
+   |Resource group|Insira **az-rg-1.** Selecione **OK**|
    |**Detalhes da instância**|
    |Nome|Digite **azwrkspc1a.**|
    |Region|Selecione **Leste dos EUA**.|

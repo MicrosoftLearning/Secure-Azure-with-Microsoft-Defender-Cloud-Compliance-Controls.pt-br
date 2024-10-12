@@ -57,9 +57,7 @@ lab:
 
 7. Na caixa de espaço de endereço em **Sub-redes**, selecione a sub-rede **padrão**.
 
-8. Na caixa de espaço de endereço em **Sub-redes**, selecione a sub-rede padrão.
-
-9. Em **Editar sub-rede**, insira ou selecione as seguintes informações:
+8. No modelo **Editar sub-rede**, insira ou selecione as seguintes informações:
 
    |Configuração|Valor|
    |---|---|
@@ -71,10 +69,9 @@ lab:
 
 ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/73c40ee1-1452-4b7d-8328-004c795a7b1e)
 
+9. Selecione **Salvar**.
 
-10. Selecione **Salvar**.
-
-11. Selecione **Examinar + criar** na parte inferior da tela e, quando a validação for aprovada, selecione **Criar**.
+10. Selecione **Examinar + criar** na parte inferior da tela e, quando a validação for aprovada, selecione **Criar**.
 
 ### Crie um grupo de segurança de aplicativos para permitir agrupar servidores com funções semelhantes, como servidores Web.
 
@@ -149,7 +146,7 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
 
 3. Selecione **Sub-redes** na seção **Configurações** da **nsg-1**.
 
-4. Na página **Sub-redes**, selecione **+Associar**:
+4. Na página **nsg-1 |Sub-redes**, clique em + **Associar**:
 
  ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/3b2004f6-963f-43df-9d05-3999d2e97d76)
 
@@ -161,7 +158,7 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
 
 1. Selecione **Regras de segurança de entrada** na seção **Configurações** do **nsg-1**.
    
-2. Na página **Regras de segurança de entrada**, selecione **+ Adicionar**:
+2. Na página **nsg-1 | Regras de segurança de entrada**, clique em + **Adicionar**:
 
 3. Crie uma regra de segurança que permita o acesso das portas 80 e 443 ao grupo de segurança de aplicativos **asg-web**. Na página **Adicionar regra de segurança de entrada**, insira ou selecione as estas informações:
 
@@ -229,7 +226,7 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
  
 4. Selecione **Avançar: Discos** e **Avançar: Rede.
 
-5. Na guia **Rede**, insira ou selecione as seguintes informações:
+5. Na guia **Rede**, verifique ou insira as seguintes informações:
 
    |Configuração|Valor|
    |---|---|
@@ -259,13 +256,13 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
  
 3. Escolha **Rede** na seção **vm-1**
 
-4. Selecione a guia **Grupos de segurança do aplicativo** e escolha **Configurar os grupos de segurança do aplicativo**
+4. Clique na guia **Grupos de segurança do aplicativo** e clique em **+ Adicionar grupos de segurança do aplicativo**
 
-5. No modelo **Configurar os Grupos de Segurança do Aplicativo**, escolha **asg-mgmt** no menu suspenso **Grupos de Segurança do Aplicativo** e clique no ícone **Salvar** na parte superior da página do modelo.
+5. No modelo **Adicionar grupos de segurança do aplicativo**, escolha **asg-mgmt** no modelo **Grupos de segurança do aplicativo** e clique no ícone **Adicionar** na parte inferior da página do modelo.
 
 ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/assets/91347931/dd17aeba-8e16-431b-b921-527367fea484)
 
-6. Repita as etapas anteriores para **vm-2**, selecionando **asg-web** no menu suspenso **Grupos de segurança do aplicativo**.
+6. Repita as etapas anteriores para **vm-2**, selecionando **asg-web** no modelo **Grupos de segurança do aplicativo**.
 
 > **Resultados**: você criou uma infraestrutura de rede virtual e filtrou o tráfego de rede com um grupo de segurança de rede usando o portal do Azure.
 

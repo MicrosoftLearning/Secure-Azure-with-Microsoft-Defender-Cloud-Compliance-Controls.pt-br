@@ -132,7 +132,7 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
    |Nome|Insira **nsg-1**|
    |Região|Selecione **Leste dos EUA**|  
     
-4. Selecione **Revisar** + criar**.
+4. Selecione **Examinar + criar**.
 
 5. Selecione **Criar**.
 

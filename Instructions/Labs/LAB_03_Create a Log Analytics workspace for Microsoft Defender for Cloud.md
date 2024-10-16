@@ -14,7 +14,7 @@ Quando você coleta logs e dados, as informações são armazenadas em um worksp
 
 ## Tarefa de habilidades
 
-- Criar um espaço de trabalho do Log Analytics.
+- Criar um workspace do Log Analytics.
 - Associe o workspace a um grupo de recursos existente.
 - Especifique uma região específica para implantar o workspace.
 
@@ -24,7 +24,7 @@ Quando você coleta logs e dados, as informações são armazenadas em um worksp
 
 1. Abra uma sessão do navegador e entre no [menu do portal do Azure](https://portal.azure.com/).
    
-2. No portal do Azure, insira **Log Analytics** na caixa de pesquisa. Quando você começa a digitar, a lista é filtrada com base em sua entrada. Escolha **workspaces do Log Analytics**.
+2. No portal do Azure, insira **espaços de trabalho do Log Analytics** na caixa de pesquisa. Quando você começa a digitar, a lista é filtrada com base em sua entrada. Escolha **workspaces do Log Analytics**.
 
 4. Selecione **Criar**.
 

@@ -45,8 +45,8 @@ lab:
    |Configuração|Valor|
    |---|---|
    |**Detalhes do projeto**|
-   |Subscription|Selecione sua assinatura.|
-   |Resource group|Selecione **Criar novo**, insira **az-rg-1** e selecione **OK**|
+   |Subscription|Selecionar sua assinatura|
+   |Grupo de recursos|Selecione **Criar novo**, insira **az-rg-1** e selecione **OK**|
    |**Detalhes da instância**|
    |Nome da rede virtual|Insira **vnet-1**|
    |Region|Selecione **(EUA) Leste dos EUA**|  
@@ -86,8 +86,8 @@ Um ASG (grupo de segurança do aplicativo) permite agrupar servidores com funç�
    |Configuração|Valor|
    |---|---|
    |**Detalhes do projeto**|
-   |Subscription|Selecione sua assinatura.|
-   |Resource group|Selecione **az-rg-1**|
+   |Subscription|Selecionar sua assinatura|
+   |Grupo de recursos|Selecione **az-rg-1**|
    |**Detalhes da instância**|
    |Nome|Insira **asg-web**|
    |Região|Selecione **Leste dos EUA**|  
@@ -101,8 +101,8 @@ Um ASG (grupo de segurança do aplicativo) permite agrupar servidores com funç�
    |Configuração|Valor|
    |---|---|
    |**Detalhes do projeto**|
-   |Subscription|Selecione sua assinatura.|
-   |Resource group|Selecione **az-rg-1**|
+   |Subscription|Selecionar sua assinatura|
+   |Grupo de recursos|Selecione **az-rg-1**|
    |**Detalhes da instância**|
    |Nome|Insira **asg-mgmt**|
    |Região|Selecione **Leste dos EUA**|
@@ -126,8 +126,8 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
    |Configuração|Valor|
    |---|---|
    |**Detalhes do projeto**|
-   |Subscription|Selecione sua assinatura.|
-   |Resource group|Selecione **az-rg-1**|
+   |Subscription|Selecionar sua assinatura|
+   |Grupo de recursos|Selecione **az-rg-1**|
    |**Detalhes da instância**|
    |Nome|Insira **nsg-1**|
    |Região|Selecione **Leste dos EUA**|  

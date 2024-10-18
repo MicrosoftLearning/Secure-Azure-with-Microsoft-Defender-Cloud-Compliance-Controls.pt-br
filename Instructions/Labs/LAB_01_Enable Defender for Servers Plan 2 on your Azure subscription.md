@@ -24,36 +24,20 @@ O principal objetivo deste exercício é fornecer experiência prática de confi
 
 1. Entre no [menu do portal do Azure.](https://portal.azure.com/)
 
-2. No portal do Azure, na caixa de texto Pesquisar recursos, serviços e documentos na parte superior da página do portal do Azure, digite Microsoft Defender para Nuvem e pressione a tecla Enter.
+2. Na caixa de texto Pesquisar recursos, serviços e documentos na parte superior da página do portal do Azure, digite **Microsoft Defender para Nuvem** e pressione a tecla **Enter**.
 
-3. Na **folha Gerenciamento** do **Microsoft Defender for Cloud**, acesse **Configurações de ambiente**. Expanda as pastas de configurações do ambiente até que a seção **Assinatura do Ignite** seja exibida e clique na **Assinatura do Ignite** para exibir detalhes.
+3. Na folha **Gerenciamento** do **Microsoft Defender para Nuvem**, acesse **Configurações de ambiente**. Expanda as pastas de configurações do ambiente até que a seção **assinatura** seja exibida e clique na **assinatura** para exibir os detalhes.
 
-4. Ative o plano do Microsoft Defender selecionando sua **Assinatura** e o **Workspace do Log Analytics** que você criou no Módulo 02.
-
-5. Clique no grande botão azul **Atualizar** na parte inferior da página.
+   ![imagem](https://github.com/user-attachments/assets/32d2168e-458f-4872-9bf8-e8f050f24751)
    
-    ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/256bd584-b04f-4d5b-81a7-c83dd1af3b4f)
+3. Na folha **Configurações**, em **Planos do Defender**, expanda **CWP (Proteção de Carga de Trabalho na Nuvem)**.
+
+4. Na lista **Plano de CWP (Proteção de Carga de Trabalho na Nuvem)**, selecione **Servidores**. No lado direito da página, altere o **Status** de **Desativado** para **Ativado** e clique em **Salvar**.
+
+5. Para examinar os detalhes do **Plano 2 do Servidor**, selecione **Alterar plano >**.
+
+   Observação: habilitar o plano de Servidores de CWP (Proteção de Carga de Trabalho na Nuvem) de Desativado para Ativado habilita o Plano 2 do Microsoft Defender para servidores.
+
+   ![imagem](https://github.com/user-attachments/assets/869a38e4-464e-4be0-b02e-ce1b96f02978)
    
-6. No painel **Microsoft Defender para Nuvem**, **Introdução**, acesse a guia **Instalar agentes** e role para baixo.
-
-    ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/8120ec8f-23dc-4636-bc45-b415c7894b8c)
-
-7. Marque a caixa associada à assinatura na qual os agentes serão instalados e clique em **Instalar agentes.**
-
-### Ações alternativas para atualizar sua assinatura do Microsoft Defender para Nuvem.
-
-1. Navegue até **Microsoft Defender para Nuvem** e, no painel de navegação esquerdo, na seção Gerenciamento, clique em **Configurações do Ambiente.**
-   
-2. No painel **Microsoft Defender para Nuvem, Configurações do Ambiente**, clique em **Expandir tudo**, role para baixo até que sua assinatura seja exibida e clique na assinatura relevante.
-
-3. Na folha **Configurações, planos do Defender**, selecione **Habilitar todos os planos** e clique em **Salvar.**
-
-   ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/4b684851-98ae-4720-a3e3-afa99aab8c43)
-
-
-
-
-   
-
-   
-> **Resultados**: você atualizou e habilitou o Defender para Nuvem em sua assinatura do Azure.
+> **Resultados**: você habilitou o Plano 2 do Microsoft Defender para servidores na sua assinatura.

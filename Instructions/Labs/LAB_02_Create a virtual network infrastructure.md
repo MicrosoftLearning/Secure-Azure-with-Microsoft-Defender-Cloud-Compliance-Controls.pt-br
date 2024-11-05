@@ -65,11 +65,13 @@ lab:
    |Endereço inicial|Deixe a configuração padrão como 10.0.0.0/16.|
    |Tamanho da sub-rede|Deixe as configurações padrão como /24 (256 endereços).
 
-![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/73c40ee1-1452-4b7d-8328-004c795a7b1e)
+   ![imagem](https://github.com/user-attachments/assets/4c5834f8-459f-4063-bd82-3e65237c6b1d)
 
-9. Selecione **Salvar**.
+10. Selecione **Salvar**.
 
-10. Selecione **Examinar + criar** na parte inferior da tela e, quando a validação for aprovada, selecione **Criar**.
+11. Selecione **Examinar + criar** na parte inferior da tela e, quando a validação for aprovada, selecione **Criar**.
+
+    ![imagem](https://github.com/user-attachments/assets/4fd02061-2349-42c4-8582-c7178f9b7eb6)
 
 ### Crie um grupo de segurança de aplicativos para permitir agrupar servidores com funções semelhantes, como servidores Web.
 
@@ -103,7 +105,7 @@ Um ASG (grupo de segurança do aplicativo) permite agrupar servidores com funç�
    |Resource group|Selecione **az-rg-1**.|
    |**Detalhes da instância**|
    |Nome|Insira **asg-mgmt**.|
-   |Região|Selecione **(EUA) Leste dos EUA**.|
+   |Region|Selecione **Leste dos EUA**.|
 
 7. Selecione **Examinar + criar**.
 

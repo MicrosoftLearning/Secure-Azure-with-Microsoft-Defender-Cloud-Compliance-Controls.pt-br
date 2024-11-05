@@ -24,7 +24,7 @@ Quando você coleta logs e dados, as informações são armazenadas em um worksp
 
 1. Abra uma sessão do navegador e entre no [menu do portal do Azure](https://portal.azure.com/).
    
-2. No portal do Azure, insira **espaços de trabalho do Log Analytics** na caixa de pesquisa. Quando você começa a digitar, a lista é filtrada com base em sua entrada. Escolha **workspaces do Log Analytics**.
+2. No menu do portal do Azure, insira **workspaces do Log Analytics** na caixa de pesquisa. Quando você começa a digitar, a lista é filtrada com base em sua entrada. Escolha **workspaces do Log Analytics**.
 
 4. Na página **Workspaces do Log Analytics**, escolha **+ Criar**.
 

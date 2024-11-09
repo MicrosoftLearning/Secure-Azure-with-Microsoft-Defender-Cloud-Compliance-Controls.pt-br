@@ -32,7 +32,7 @@ As DCRs (regras de coleta de dados) especificam os dados a serem coletados, enqu
 
 >**Observação**: crie a regra de coleta de dados na mesma região que o workspace do Log Analytics ou o workspace do Azure Monitor. Você pode associá-la a computadores ou contêineres de qualquer assinatura ou grupo de recursos no locatário. O Agente do Azure Monitor será instalado automaticamente nos recursos virtuais do Azure.
 
-1. Na caixa de pesquisa na parte superior do portal, insira as **regras de coleta de dados**. Selecione **Regras de coleta de dados** nos resultados da pesquisa.
+1. Na caixa de pesquisa na parte superior do portal, digite **regras de coleta de dados**. Selecione **Regras de coleta de dados** nos resultados da pesquisa.
   
 2. Na página **Regras de coleta de dados**, clique em **+ Criar**.
   
@@ -54,7 +54,7 @@ As DCRs (regras de coleta de dados) especificam os dados a serem coletados, enqu
 
 4. Clique no botão na parte inferior da página **Básico** rotulado **Avançar: Recursos >** para continuar.
    
-5. Na página **Recursos**, selecione **+ Adicionar recursos**.
+5. Na página **Recursos**, clique em **+ Adicionar recursos**.
 
     ![imagem](https://github.com/user-attachments/assets/6aabf2c9-bea2-47c1-9b0b-bf131cdec4e3)
 
@@ -72,7 +72,7 @@ As DCRs (regras de coleta de dados) especificam os dados a serem coletados, enqu
 
     ![imagem](https://github.com/user-attachments/assets/0809cf5b-a460-40d1-8508-e42ba7ce78c1)
 
-10. Em **Adicionar modelo de fonte de dados**, em **Tipo de fonte de dados**, selecione as configurações a seguir.
+10. No modelo **Adicionar fonte de dados**, em **Tipo de fonte de dados**, selecione as configurações a seguir.
     
     |Configuração|Valor|
     |---|---|

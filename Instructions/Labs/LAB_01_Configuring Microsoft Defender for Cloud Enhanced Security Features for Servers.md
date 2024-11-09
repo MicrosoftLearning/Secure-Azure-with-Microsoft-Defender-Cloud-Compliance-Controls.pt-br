@@ -28,7 +28,7 @@ O principal objetivo deste exercício é fornecer experiência prática de confi
 
 3. Na folha **Gerenciamento** do **Microsoft Defender para Nuvem**, acesse **Configurações de ambiente**. Expanda as pastas de configurações do ambiente até que a seção **assinatura** seja exibida e clique na **assinatura** para exibir os detalhes.
 
-   ![imagem](https://github.com/user-attachments/assets/32d2168e-458f-4872-9bf8-e8f050f24751)
+   ![imagem](https://github.com/user-attachments/assets/3b25dd82-e09e-4f8a-b85e-c9bc6c4bd488)
    
 3. Na folha **Configurações**, em **Planos do Defender**, expanda **CWP (Proteção de Carga de Trabalho na Nuvem)**.
 
@@ -37,7 +37,7 @@ O principal objetivo deste exercício é fornecer experiência prática de confi
 5. Para examinar os detalhes do **Plano 2 do Microsoft Defender para Servidores**, escolha **Alterar plano >**.
 
    Observação: habilitar o plano de Servidores de CWP (Proteção de Carga de Trabalho na Nuvem) de Desativado para Ativado habilita o Plano 2 do Microsoft Defender para servidores.
-
-   ![imagem](https://github.com/user-attachments/assets/869a38e4-464e-4be0-b02e-ce1b96f02978)
+ 
+   ![imagem](https://github.com/user-attachments/assets/de434a75-345a-4023-83f1-fa53fcb5f288)
    
 > **Resultados**: você habilitou o Plano 2 do Microsoft Defender para servidores na sua assinatura.

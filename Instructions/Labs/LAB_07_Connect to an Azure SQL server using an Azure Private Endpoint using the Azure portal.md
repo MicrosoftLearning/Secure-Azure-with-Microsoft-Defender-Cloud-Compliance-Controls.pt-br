@@ -38,7 +38,6 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    
    |Configuração|Valor|
    |---|---|
-   |**Detalhes do projeto**|
    |Subscription|Selecione sua assinatura.|
    |Resource group|Selecione **az-rg-1**.|
    |**Detalhes da instância**|
@@ -49,38 +48,39 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
   
 6. Selecione **Habilitar o Azure Bastion** na seção Azure Bastion da guia Segurança.
 
-   >**Observação**: o Azure Bastion é um serviço pago que fornece conectividade de RDP/SSH segura às suas máquinas virtuais via TLS. Quando você se conecta usando o Azure Bastion, suas máquinas virtuais não precisam de um endereço IP público. 
+>**Observação**: o Azure Bastion é um serviço pago que fornece conectividade de RDP/SSH segura às suas máquinas virtuais via TLS. Quando você se conecta usando o Azure Bastion, suas máquinas virtuais não precisam de um endereço IP público. 
 
 7. Insira ou selecione as seguintes informações no campo **Azure Bastion**:
 
    |Configuração|Valor|
    |---|---|
-   |**Detalhes do projeto**|
    |Host do Azure Bastion |Insira **az-bastionhost-1a.**|
    |Nome do endereço IP público do Azure Bastion|Selecione **Criar um endereço IP público**|
    |Adicionar um endereço IP público|Selecione **OK**|
 
-9. Selecione **Avançar** para prosseguir para a guia **Endereços de IP**.
+8. Selecione **Avançar** para prosseguir para a guia **Endereços de IP**.
 
-10. Na caixa de **espaço de endereço IPv4** configurada, na coluna **Sub-redes**, clique na entrada **padrão**.
+9. Na caixa de **espaço de endereço IPv4** configurada, na coluna **Sub-redes**, clique na entrada **padrão**.
 
-11. No modelo **Editar sub-rede**, insira ou selecione as seguintes informações:
+10. No modelo **Editar sub-rede**, insira ou selecione as seguintes informações:
 
     |Configuração|Valor|
     |---|---|
-    |**Detalhes do projeto**|
     |Finalidade da sub-rede|Deixe a configuração padrão como Padrão.|
     |Nome|**subnet-2**|
+    |Incluir um espaço de endereço IPv4|Deixe a configuração padrão com a marca de seleção.|
     |Intervalo de endereços IPv4|Deixe a configuração padrão como 10.0.0.0/16.|
-    |Endereço inicial|Deixe a configuração padrão como /24 (256 endereços).|
+    |Endereço inicial|10.0.0.0.|
+    |Tamanho|Deixe a configuração padrão como /24 (256 endereços).|
+    |Intervalo de endereços da sub-rede|10.0.0.0-10.0.0.255.|
 
-13. Na parte inferior da página **Editar sub-rede**, clique em **Salvar**.
+11. Na parte inferior da página **Editar sub-rede**, clique em **Salvar**.
 
-14. Na parte inferior da página **Endereços IP**, clique em **Revisar + criar**.
+12. Na parte inferior da página **Endereços IP**, clique em **Revisar + criar**.
 
-    >**Observação**: A implantação do Bastion pode levar até 15 minutos para a instanciação completa.
+13. Na parte inferior da página **Revisar + criar** clique em **Criar**.
 
-15. Na parte inferior da página **Revisar + criar** clique em **Criar**.
+>**Observação**: A implantação do Bastion pode levar até 15 minutos para a instanciação completa.
  
 ### Crie uma máquina virtual.
 
@@ -94,7 +94,6 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
 
    |Configuração|Valor|
    |---|---|
-   |**Detalhes do projeto**|
    |Assinatura|Selecione sua assinatura.|
    |Resource group|Selecione **az-rg-1**.|
    |**Detalhes da instância**|
@@ -111,11 +110,12 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    |Senha|Insira **Superuser#170.**|
    |Confirmar senha|Reinsira **Superuser#170.**|
    |**Regras de porta de entrada**|
-   |Selecione as portas de entrada|Selecione **Nenhum**.|
+   |Porta de entrada públicas|Selecione **Nenhum**.|
+   |Selecione as portas de entrada|A configuração padrão está esmaecida.|
 
-5. Selecione **Avançar: Discos** e **Avançar: Rede**.
+4. Selecione **Avançar: Discos** e **Avançar: Rede**.
   
-6. Na página **Rede**, insira ou selecione estas informações:
+5. Na página **Rede**, insira ou selecione estas informações:
 
    |Configuração|Valor|
    |---|---|
@@ -125,7 +125,7 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    |IP público|Selecione **Nenhum**.|
    |Grupo de segurança de rede da NIC|Selecione **Básico**.|
    |Porta de entrada públicas|Selecione **Nenhum**.|
-   |Selecione as portas de entrada|Deixe a configuração padrão como em branco.|
+   |Selecione as portas de entrada|A configuração padrão está esmaecida.|
    |Excluir o adaptador de rede quando a VM é excluída|Deixe a configuração padrão como Habilitar rede acelerada marcada.|
    |Balanceamento de carga|Mantenha a configuração padrão como Nenhum.|
   
@@ -145,21 +145,22 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
 
    |Configuração|Valor|
    |---|---|
-   |**Detalhes do projeto**|
    |Subscription|Selecione sua assinatura.|
    |Resource group|Selecione **az-rg-1**.|
    |**Detalhes do banco de dados**|
    |Nome do banco de dados|Insira **az-sql-db1a.**|
-   |Nome do servidor|Insira **az-sql-svr1a.** Se esse nome já estiver sendo usado, crie um nome exclusivo.|
-   |Location|Selecione **(EUA) Leste dos EUA**.|
+   |Servidor|Selecione **Criar novo**.|
+   |**Detalhes do servidor**|
+   |Nome do servidor|Insira **az-sql-srv1a**.|
+   |Localidade|Deixe a configuração padrão como (EUA) Leste dos EUA|
    |**Autenticação**|
-   |Método de autenticação|Selecione **Usar a autenticação SQL**.|
+   |Método de autenticação|Selecione **Usar a autenticação SQL**.|  
    |Logon de administrador do servidor|Insira **Tenantadmin2.**|
    |Senha|Insira **Superuser#170.**|
    |Confirmar senha|Insira **Superuser#170.**|
 
 4. Selecione **OK**.
-   
+    
    |Configuração|Valor|
    |---|---|
    |**Detalhes do banco de dados**|
@@ -180,16 +181,20 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    |Política de Conexão|Deixe a configuração padrão como Padrão – Usa a política de redirecionamento para todas as conexões de cliente originadas no Azure (exceto conexões de ponto de extremidade privado) e no Proxy para todas as conexões de cliente originadas fora do Azure|
    |Conexões de criptografia|Deixe a configuração padrão como TLS.12|
 
-7. Selecione **+ Adicionar ponto de extremidade privado** em **Pontos de extremidade privados**.
+7. Na seção **Pontos de extremidade privados**, selecione **+ Adicionar ponto de extremidade privado**.
 
-8. Em **Criar ponto de extremidade privado**, insira ou selecione estas informações:
+8. Selecione **Examinar + criar**.
+
+9. Selecione **Criar**.
+
+10. Em **Criar ponto de extremidade privado**, insira ou selecione estas informações:
 
    |Configuração|Valor|
    |---|---|
    |Subscription|Selecione sua assinatura.|
    |Resource group|Selecione **az-rg-1**.|
    |Localidade|Selecione **Leste dos EUA**.|
-   |Nome|Insira **az-pe-1a.**|
+   |Nome|Insira **az-pe1a.**|
    |Sub-recurso de destino|Deixe a configuração padrão como SqlServer.|
    |**Rede**|
    |Rede virtual|Selecione **vnet-2**.|
@@ -198,68 +203,75 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    |Integrar com a zona de DNS privado|Deixe a configuração padrão como Sim.|
    |Zona DNS privado|Deixe a configuração padrão como (Novo) privatelink.database.windows.net.|
 
-9. Selecione **OK**.
+11. Selecione **OK**.
 
-10. Selecione **Examinar + criar**.
+12. Selecione **Examinar + criar**.
 
-11. Selecione **Criar**.
+13. Selecione **Criar**.
 
-### Desabilitar o acesso público ao SQL Server lógico do Azure
+>**Observação**: a implantação do servidor do SQL do Azure e do ponto de extremidade privado pode levar até dez minutos para a instanciação completa.
 
->**Observação**: para esta tarefa, suponha que você gostaria de desabilitar todo o acesso público ao SQL Server do Azure e permitir apenas conexões a partir de sua rede virtual. O padrão da configuração **Acesso público** pode ser **Desativar**.
+### Permita que determinados endereços IP da Internet pública acessem seu servidor lógico do SQL do Azure.
 
-1. Na caixa de pesquisa portal do Azure, insira **az-sql-svr1a** ou o nome do servidor que você inseriu nas etapas anteriores.
+>**Observação**: para esta tarefa, suponha que você gostaria de habilitar o acesso público ao servidor do SQL do Azure e permitir apenas conexões a partir de sua rede virtual. O padrão da configuração Acesso público pode ser **Desativado**.
 
-2. Selecione **Rede** na seção **Segurança** de **az-sql-svr1a.** Na página **Rede**, selecione a guia **Acesso público** e, em seguida, selecione **Desabilitar** para **Acesso à rede pública**.
+1. Na caixa de pesquisa do portal do Azure, insira **az-sql-svr1a** ou o nome do servidor que você inseriu nas etapas anteriores.
+   
+2. Selecione **Rede** na seção **Segurança** de **az-sql-srv1a**.
+  
+3. Na página **Rede**, vá para a guia **Acesso público**.
+  
+4. Confirme se o **Acesso à rede pública** está desabilitado. Se não estiver, clique em **Redes selecionadas** em Acesso à rede pública.
 
-   ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/44ff5c24-70cf-49ed-b2ab-5e210c478b3a)
+>**Observação**: as conexões dos endereços IP configuradas na seção Regras de firewall abaixo terão acesso a este banco de dados. Por padrão, nenhum endereço IP público é permitido.
 
-3. Selecione **Salvar**.
+5. Se necessário, vá para a seção **Regras de firewall** na página **Rede** e selecione **+ Adicionar o endereço IPv4 do cliente** se o endereço IP do cliente ainda não estiver preenchido nos campos **Nome da regra**,**Endereço IPv4 inicial** e **Endereço IPv4 final**.
+    
+     ![imagem](https://github.com/user-attachments/assets/dfdeffca-d33f-44e1-81db-9f68a51f89df)
+
+6. Se necessário, clique em **Salvar**.
 
 ### Testar a conectividade com o ponto de extremidade privado
 
 >**Observação**: nesta tarefa, você usará a máquina virtual criada nas etapas anteriores para se conectar ao SQL Server pelo ponto de extremidade privado.
 
-1. Selecione **Grupos de recursos** no painel de navegação à esquerda.
+1. Na caixa de pesquisa do portal do Azure, digite **vm-3** e selecione-o na lista suspensa Recursos.
 
-2. Selecione **az-rg-1**.
+2. Na página **Visão geral** de vm-3, selecione **Conectar** e, em seguida, escolha **Bastion**.
 
-3. Selecione **vm-3.**
-
-4. Na página de visão geral de **vm-3**, escolha Conectar e, em seguida, **Bastion**.
-
-5. Insira o nome de usuário **Tenantadmin2** e a senha **Superuser#170** que você inseriu durante a criação da máquina virtual.
+3. Insira o nome de usuário **Tenantadmin2** e a senha **Superuser#170** que você inseriu durante a criação da máquina virtual.
 
    **Importante:** vá para as configurações de Borda/Pop-ups e redirecionamentos/e alterne a opção Bloqueado para **desativado** antes de selecionar Conectar.
 
-7. Selecione o botão **Conectar**.
+4. Selecione o botão **Conectar**.
   
-8. Abra o Windows PowerShell no servidor depois de se conectar.
+5. Abra o Windows PowerShell no servidor depois de se conectar.
 
-9. Insira `nslookup sqlserver-name.database.windows.net.` Substitua **sqlserver-name** pelo nome do SQL Server criado nas etapas anteriores. Você receberá uma mensagem semelhante à mostrada abaixo:
+6. Substitua **sqlserver-name** pelo nome do SQL Server criado nas etapas anteriores. Por exemplo, insira **nslookup az-sql-srv1a.database.windows.net**. Você receberá uma mensagem semelhante à mostrada abaixo:
 
-   ````  
+   ````
+   
    Server:  UnKnown
    Address:  168.63.129.16
    
    Non-authoritative answer:
-   Name:    az-sql-svr1a.privatelink.database.windows.net
+   Name:    az-sql-srv1a.privatelink.database.windows.net
    Address:  10.1.0.5
-   Aliases:  az-sql-svr1a.database.windows.net
+   Aliases:  az-sql-srv1a.database.windows.net
    ````
-    
->**Observação**: o endereço IP privado 10.1.0.5 é retornado para o nome do SQL Server. Esse endereço está na sub-rede **az-sql-svr1a** da rede virtual **vnet-2** criada anteriormente.
+   
+>**Observação**: o endereço IP privado 10.1.0.5 é retornado para o nome do SQL Server. Esse endereço está na sub-rede **az-sql-srv1a** da rede virtual **vnet-2** criada anteriormente.
 
-9. Instale o [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&view=sql-server-2017) em **vm-3**.
+7. Instale o [SSMS (SQL Server Management Studio)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) em **vm-3**.
  
-10. Abra o **SQL Server Management Studio**.
+8. Abra o **SQL Server Management Studio**.
 
-11. Em **Conectar-se ao servidor**, insira ou selecione estas informações:
+9. Em **Conectar-se ao servidor**, insira ou selecione estas informações:
 
     |Configuração|Valor|
     |---|---|
     |Tipo de servidor|Selecione **Mecanismo de Banco de Dados**.|
-    |Nome do servidor|Insira **az-sql-svr1a.database.windows.net.**|
+    |Nome do servidor|Insira **az-sql-srv1a.database.windows.net**.|
     |Autenticação|Selecione **Autenticação do SQL Server**.|
     |Nome de usuário|Insira **Tenantadmin2**.|
     |Senha|Insira **Superuser#170**.|
@@ -267,10 +279,10 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
     |Segurança da conexão|
     |Criptografia|Deixe a configuração padrão como Obrigatório.|
    
-13. Selecione **Conectar**.
+10. Selecione **Conectar**.
 
-14. Procurar bancos de dados no menu à esquerda.
+11. Procurar bancos de dados no menu à esquerda.
 
-15. Feche a conexão da área de trabalho remota da vm-3.
+12. Feche a conexão da área de trabalho remota da vm-3.
   
 > **Resultados**: você se conectou a um SQL Server do Azure por meio de um Ponto de Extremidade Privado do Azure usando o portal do Azure.

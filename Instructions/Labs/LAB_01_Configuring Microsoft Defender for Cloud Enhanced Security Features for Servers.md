@@ -22,7 +22,7 @@ O principal objetivo deste exercício é fornecer experiência prática de confi
 
 ### Configurar Recursos de Segurança aprimorados para Servidores do Microsoft Defender para Nuvem
 
-1. Entre no [menu do portal do Azure.](https://portal.azure.com/)
+1.  Abra uma sessão do navegador e entre no [menu do portal do Azure](https://portal.azure.com/).         
 
 2. Na caixa de texto Pesquisar recursos, serviços e documentos na parte superior da página do portal do Azure, digite **Microsoft Defender para Nuvem** e pressione a tecla **Enter**.
 
@@ -30,11 +30,11 @@ O principal objetivo deste exercício é fornecer experiência prática de confi
 
    ![imagem](https://github.com/user-attachments/assets/3b25dd82-e09e-4f8a-b85e-c9bc6c4bd488)
    
-3. Na folha **Configurações**, em **Planos do Defender**, expanda **CWP (Proteção de Carga de Trabalho na Nuvem)**.
+4. Na folha **Configurações**, em **Planos do Defender**, expanda **CWP (Proteção de Carga de Trabalho na Nuvem)**.
 
-4. Na lista **Plano de CWP (Proteção de Carga de Trabalho na Nuvem)**, selecione **Servidores**. No lado direito da página, altere o **Status** de **Desativado** para **Ativado** e clique em **Salvar**.
+5. Na lista **Plano de CWP (Proteção de Carga de Trabalho na Nuvem)**, selecione **Servidores**. No lado direito da página, altere o **Status** de **Desativado** para **Ativado** e clique em **Salvar**.
 
-5. Para examinar os detalhes do **Plano 2 do Microsoft Defender para Servidores**, escolha **Alterar plano >**.
+6. Para examinar os detalhes do **Plano 2 do Microsoft Defender para Servidores**, escolha **Alterar plano >**.
 
    Observação: habilitar o plano de Servidores de CWP (Proteção de Carga de Trabalho na Nuvem) de Desativado para Ativado habilita o Plano 2 do Microsoft Defender para servidores.
  

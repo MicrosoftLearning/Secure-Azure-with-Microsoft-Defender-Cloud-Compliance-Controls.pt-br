@@ -34,7 +34,7 @@ lab:
 
 1. Abra uma sessão do navegador e entre no [menu do portal do Azure](https://portal.azure.com/).             
    
-2. Na caixa de pesquisa na parte superior do portal, digite **Redes virtuais**. Selecione **Redes virtuais** nos resultados da pesquisa.
+2. Na caixa de pesquisa, na parte superior do portal, digite **redes virtuais**. Selecione **Redes virtuais** nos resultados da pesquisa.
 
 3. Na página **Redes virtuais**, selecione **+ Criar**.
 
@@ -63,21 +63,21 @@ lab:
    |Finalidade da sub-rede|Deixe a configuração padrão como Padrão.|
    |Nome|Insira **sub-rede-1.**|
    |Endereço inicial|Deixe a configuração padrão como 10.0.0.0/16.|
-   |Tamanho da sub-rede|Deixe as configurações padrão como /24 (256 endereços).
+   |Tamanho|Deixe as configurações padrão como /24 (256 endereços).|
 
-   ![imagem](https://github.com/user-attachments/assets/4c5834f8-459f-4063-bd82-3e65237c6b1d)
+    ![imagem](https://github.com/user-attachments/assets/82076f64-6a7f-4235-942d-d83e32ed6ea1)
 
 10. Selecione **Salvar**.
 
 11. Selecione **Examinar + criar** na parte inferior da tela e, quando a validação for aprovada, selecione **Criar**.
 
-    ![imagem](https://github.com/user-attachments/assets/4fd02061-2349-42c4-8582-c7178f9b7eb6)
+     ![imagem](https://github.com/user-attachments/assets/c53a04e4-d760-4e28-b998-1d48a56702f1)
 
 ### Crie um grupo de segurança de aplicativos para permitir agrupar servidores com funções semelhantes, como servidores Web.
 
 Um ASG (grupo de segurança do aplicativo) permite agrupar servidores com funções semelhantes, como servidores Web.
 
-1. Na caixa de pesquisa na parte superior do portal, digite **Grupo de segurança de aplicativo**. Selecione **Grupos de segurança do aplicativo** nos resultados da pesquisa.
+1. Na caixa de pesquisa, na parte superior do portal, insira **Grupos de segurança do aplicativo**. Selecione **Grupos de segurança do aplicativo** nos resultados da pesquisa.
 
 2. Na página **Grupos de segurança do aplicativo**, clique em **+ Criar**.
 
@@ -115,7 +115,7 @@ Um ASG (grupo de segurança do aplicativo) permite agrupar servidores com funç�
 
 Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virtual.
 
-1. Na caixa de pesquisa na parte superior do portal, digite **Grupo de segurança de rede**. Selecione **Grupos de segurança de rede** nos resultados da pesquisa.
+1. Na caixa de pesquisa na parte superior do portal, digite **grupos de segurança de rede**. Selecione **Grupos de segurança de rede** nos resultados da pesquisa.
 
 >**Observação**: nos resultados da pesquisa para Grupos de segurança de rede, você poderá ver os Grupos de segurança de rede (clássico). Selecione Grupos de segurança de rede.
 
@@ -140,7 +140,7 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
 
 >**Observação**: nesta tarefa, você associará o grupo de segurança de rede à sub-rede da rede virtual criada anteriormente.
 
-1. Na caixa de pesquisa na parte superior do portal, digite **Grupo de segurança de rede**. Selecione **Grupos de segurança de rede** nos resultados da pesquisa.
+1. Na caixa de pesquisa na parte superior do portal, digite **grupos de segurança de rede**. Selecione **Grupos de segurança de rede** nos resultados da pesquisa.
    
 2. Selecione **nsg-1**.
 
@@ -148,11 +148,11 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
 
 4. Na página **nsg-1 |Sub-redes**, clique em + **Associar**:
 
- ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/3b2004f6-963f-43df-9d05-3999d2e97d76)
+   ![imagem](https://github.com/user-attachments/assets/bfc18dd3-3345-4c05-9981-4f479d5f7c7e)
 
-5. Em **Associar sub-rede**, selecione **vnet-1 (taz-rg-1)** para **Rede virtual**.
+6. Em **Associar sub-rede**, selecione **vnet-1 (taz-rg-1)** para **Rede virtual**.
 
-6. Selecione **sub-rede-1** para **Sub-rede** e, em seguida, selecione **OK**.
+7. Selecione **sub-rede-1** para **Sub-rede** e, em seguida, selecione **OK**.
 
 ### Crie regras de segurança para o grupo de segurança de rede com a sub-rede da rede virtual criada anteriormente.
 
@@ -196,7 +196,7 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
 
 ### Crie duas VMs (máquinas virtuais) na rede virtual criada anteriormente.
 
-1. No portal, pesquise e selecione **Máquinas virtuais**.
+1. Na caixa de pesquisa na parte superior do portal, insira **máquinas virtuais**. Selecione **Máquinas virtuais** nos resultados da pesquisa.
 
 2. Em **Máquinas virtuais**, selecione **+ Criar** e, em seguida, **Máquina virtual do Azure**.
    
@@ -217,7 +217,6 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
    |Executar com desconto do Spot do Azure|Deixe a configuração padrão desmarcada.|
    |Tamanho|Deixe a configuração padrão como vcpus Standard_D2s_v3-2, 8 GiB de memória.|
    |**Conta de administrador**|
-   |Tipo de autenticação|Selecione **Senha**.|
    |Nome de Usuário|Insira **Tenantadmin1**.|
    |Senha|Insira **Superuser#150**.|
    |Confirmar senha|Reinsira **Superuser#150.**|
@@ -232,11 +231,11 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
    |---|---|
    |**Interface de rede**|
    |Rede virtual|Selecione **vnet-1**.|
-   |Sub-rede|Selecione **padrão (10.0.0.0/24)** .|
-   |IP público|Deixe a configuração padrão como um novo IP público.|
+   |Sub-rede|Deixe a configuração padrão como sub-rede-1 (10.0.0.0/24).|
+   |IP público|Deixe a configuração padrão como (novo) vm-1-ip.|
    |Grupo de segurança de rede da NIC|Selecione **Nenhum**.|
    
-6. Selecione a guia **Examinar + criar** ou clique no botão **Examinar + criar** na parte inferior da página.
+6. Selecione o botão **Revisar + criar** na parte inferior da página para prosseguir.
 
 7. Selecione **Criar**. A implantação da VM pode levar alguns minutos.
   
@@ -250,19 +249,19 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
 
 >**Observação**: quando você criou as VMs, o Azure criou um adaptador de rede para cada VM e a anexou à VM. Adicione a interface de rede de cada VM para um dos grupos de segurança de aplicativos criados anteriormente:
 
-1. Na caixa de pesquisa na parte superior do portal insira **Máquina virtual**. Selecione **Máquinas virtuais** nos resultados da pesquisa.
+1. Na caixa de pesquisa na parte superior do portal, insira **máquinas virtuais**. Selecione **Máquinas virtuais** nos resultados da pesquisa.
 
 2. Selecione **vm-1**.
  
 3. Escolha **Rede** na seção **vm-1**.
 
-4. Escolha **Grupos de segurança do aplicativo** na seção **Rede** da **vm-1. Clique em **+ Adicionar grupos de segurança do aplicativo**.
+4. Escolha **Grupos de segurança do aplicativo** na seção **Rede** da **vm-1. Escolha **+ Adicionar grupos de segurança do aplicativo**
 
 5. No modelo **Adicionar grupos de segurança do aplicativo**, escolha **asg-mgmt** no modelo **Grupos de segurança do aplicativo** e clique no botão **Adicionar** na parte inferior da página do modelo.
 
-![imagem](https://github.com/MicrosoftLearning/Secure-Azure-with-Microsoft-Defender-Cloud-Compliance-Controls/assets/91347931/dd17aeba-8e16-431b-b921-527367fea484)
+   ![imagem](https://github.com/user-attachments/assets/9bb38a91-8aa6-427b-9b6d-b01c5333ad4c)
 
-6. Repita as etapas anteriores para **vm-2**, selecionando **asg-web** no modelo **Grupos de segurança do aplicativo**.
+7. Repita as etapas anteriores para **vm-2**, selecionando **asg-web** no modelo **Grupos de segurança do aplicativo**.
 
 > **Resultados**: você criou uma infraestrutura de rede virtual e filtrou o tráfego de rede com um grupo de segurança de rede usando o portal do Azure.
 

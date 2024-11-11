@@ -25,10 +25,10 @@ Você pode usar o portal do Azure para definir as configurações de rede do Azu
 ### Usar o portal do Azure para criar um Azure Key Vault.
 
 1. Abra uma sessão do navegador e entre no [menu do portal do Azure](https://portal.azure.com/).
-   
-2. Na caixa de pesquisa do portal do Azure, insira **Key Vault.**
+  
+2. Na caixa de pesquisa, na parte superior do portal, insira **cofres de chaves**. Selecione **Cofres de chaves** nos resultados da pesquisa.
 
-3. Na lista de resultados, escolha **Key Vault.**
+3. Na lista de resultados, escolha **Cofres de chaves**.
 
 4. Na seção cofres de chaves, escolha **Criar.**
 
@@ -45,13 +45,13 @@ Você pode usar o portal do Azure para definir as configurações de rede do Azu
    |Tipo de preços|Deixe a configuração padrão como Padrão.|
    |Dias de retenção dos cofres excluídos|Deixe a configuração padrão como 90.|
 
-7. Selecione a guia **Revisar + criar** ou selecione o botão azul Revisar + criar na parte inferior da página.
+6. Selecione a guia **Revisar + criar** ou selecione o botão azul Revisar + criar na parte inferior da página.
   
-8. Selecione **Criar**.
+7. Selecione **Criar**.
 
 ### Definir as configurações do firewall e de rede virtual do Key Vault.
 
-1. Na caixa de pesquisa do portal do Azure, insira **Key Vault.**
+1. Na caixa de pesquisa do portal do Azure, insira **cofres de chaves**.
 
 2. Navegue até o cofre de chaves criado anteriormente.
 

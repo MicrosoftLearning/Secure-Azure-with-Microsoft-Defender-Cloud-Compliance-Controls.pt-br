@@ -24,11 +24,11 @@ Quando você coleta logs e dados, as informações são armazenadas em um worksp
 
 1. Abra uma sessão do navegador e entre no [menu do portal do Azure](https://portal.azure.com/).
    
-2. No menu do portal do Azure, insira **workspaces do Log Analytics** na caixa de pesquisa. Quando você começa a digitar, a lista é filtrada com base em sua entrada. Escolha **workspaces do Log Analytics**.
+2. Na caixa de pesquisa, na parte superior do portal, digite **Workspaces do Log Analytics**. Selecione **Workspaces do Log Analytics** nos resultados da pesquisa.
 
-4. Na página **Workspaces do Log Analytics**, escolha **+ Criar**.
+3. Na página **Workspaces do Log Analytics**, escolha **+ Criar**.
 
-5. Na página **Básico** de **Criar workspace do Log Analytics**, insira ou selecione estas informações:
+4. Na página **Básico** de **Criar workspace do Log Analytics**, insira ou selecione estas informações:
    
    |Configuração|Valor|
    |---|---|
@@ -39,8 +39,8 @@ Quando você coleta logs e dados, as informações são armazenadas em um worksp
    |Nome|Digite **azwrkspc1a.**|
    |Region|Selecione **Leste dos EUA**.|
 
-6. Clique na guia **Revisar + criar** na parte inferior da página.
+5. Clique na guia **Revisar + criar** na parte inferior da página.
   
-8. Selecione **Criar**.
+6. Selecione **Criar**.
 
 > **Resultados:** você criou um workspace do Log Analytics para coletar dados de recursos do Azure.

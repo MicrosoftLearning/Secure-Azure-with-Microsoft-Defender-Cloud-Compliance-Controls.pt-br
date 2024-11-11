@@ -24,17 +24,19 @@ Você pode usar o acesso JIT (just-in-time) do Microsoft Defender para Nuvem a f
 
 >**Observação**: você pode habilitar o JIT em uma VM nas páginas de máquinas virtuais do Azure do portal do Azure.
 
-1. Na caixa de pesquisa na parte superior do portal, insira **máquina virtual**. Selecione **Máquinas virtuais** nos resultados da pesquisa.
+1. Abra uma sessão do navegador e faça logon no [menu do portal do Azure](https://portal.azure.com/).
+  
+2. Na caixa de pesquisa na parte superior do portal, insira **máquinas virtuais**. Selecione **Máquinas virtuais** nos resultados da pesquisa.
 
-2. Selecione **vm-1**.
+3. Selecione **vm-1**.
  
-3. Escolha **Configuração** na seção **Configurações** de vm-1.
+4. Escolha **Configuração** na seção **Configurações** de vm-1.
    
-4. Em **Acesso à VM Just-In-Time** selecione **Habilitar Just-In-Time**.
+5. Em **Acesso à VM Just-In-Time** selecione **Habilitar Just-In-Time**.
 
-5. Em **Acesso à VM just-in-time,** clique no link que diz **Abrir Microsoft Defender para Nuvem.**
+6. Em **Acesso à VM just-in-time,** clique no link que diz **Abrir Microsoft Defender para Nuvem.**
 
-6. Por padrão, o acesso just-in-time para a VM usa estas configurações:
+7. Por padrão, o acesso just-in-time para a VM usa estas configurações:
 
    - Máquinas do Windows
    
@@ -47,12 +49,12 @@ Você pode usar o acesso JIT (just-in-time) do Microsoft Defender para Nuvem a f
      - Acesso máximo permitido: três horas
      - Endereços IP de origem permitidos: todos
    
-7. Por padrão, o acesso just-in-time para a VM usa estas configurações:
+8. Por padrão, o acesso just-in-time para a VM usa estas configurações:
 
    - Na guia **configurada**, clique com o botão direito do mouse na VM à qual você deseja adicionar uma porta e selecione Editar.
-  
- ![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/66cf98b6-2ce0-43c7-a7be-b5d69bcfac1d)
 
+   ![imagem](https://github.com/user-attachments/assets/aa4ded55-c5b1-4d40-b5a0-a4c33b9eb81b)
+   
    - Em **Configuração de acesso JIT à VM**, você pode editar as configurações existentes de uma porta já protegida ou pode adicionar uma nova porta personalizada.
    - Ao terminar de editar as portas, selecione **Salvar**.   
 
@@ -69,12 +71,7 @@ Você pode usar o acesso JIT (just-in-time) do Microsoft Defender para Nuvem a f
         - Se o JIT não estiver habilitado para a VM, você será solicitado a habilitá-lo.
     
         - Se o JIT estiver habilitado, selecione **Solicitar acesso** para passar uma solicitação de acesso com o IP solicitante, o intervalo de tempo e as portas que foram configuradas para essa VM.
-
-![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Defender-for-Cloud-regulatory-compliance-controls/assets/91347931/7e454150-bc04-47bc-afa1-e0a1e8af17f9)
-
-
-
-
-
+    
+   ![imagem](https://github.com/user-attachments/assets/f5d0b67c-7731-4261-b0eb-a56c505dadd4)
 
 > **Resultados**: você explorou vários métodos sobre como habilitar o JIT em suas VMs e como solicitar acesso a VMs que têm o JIT habilitado no Microsoft Defender para Nuvem.

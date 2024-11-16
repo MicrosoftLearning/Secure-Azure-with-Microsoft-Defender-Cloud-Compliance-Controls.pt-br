@@ -21,15 +21,17 @@ A exclusão de um cofre de chaves sem a exclusão temporária habilitada permane
 ### Verifique se a exclusão reversível está disponível para um cofre de chaves e habilite a exclusão reversível
 
 1. Abra uma sessão do navegador e entre no [menu do portal do Azure](https://portal.azure.com/).
+  
+2. Na caixa de pesquisa, na parte superior do portal, insira **cofres de chaves**. Selecione **Cofres de chaves** nos resultados da pesquisa.
    
-2. Selecione seu cofre de chaves.
+3. Navegue até o cofre de chaves criado anteriormente.
 
-3. Na folha **Configurações**, selecione **Propriedades**.
+4. Na folha **Configurações**, selecione **Propriedades**.
 
-4. Verifique se o botão de opção ao lado da exclusão temporária está definido como **Ativar proteção contra limpeza (impor um período de retenção obrigatório para cofres e objetos de cofre excluídos).**
+5. Verifique se o botão de opção ao lado da exclusão temporária está definido como **Ativar proteção contra limpeza (impor um período de retenção obrigatório para cofres e objetos de cofre excluídos).**
 
-5. Se a exclusão temporária não estiver habilitada no cofre de chaves, clique no botão de opção **Habilitar proteção contra limpeza (impor um período de retenção obrigatório para cofres e objetos de cofre excluídos)** para habilitar a exclusão temporária e clique em **Salvar**.
+6. Se a exclusão temporária não estiver habilitada no cofre de chaves, clique no botão de opção **Habilitar proteção contra limpeza (impor um período de retenção obrigatório para cofres e objetos de cofre excluídos)** para habilitar a exclusão temporária e clique em **Salvar**.
 
-![imagem](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/06131a60-7f00-4764-a424-87ea41a78394)
+   ![imagem](https://github.com/user-attachments/assets/8cc1d810-5a15-43fb-9dd8-1484af65897e)
 
 > **Resultados**: você habilitou a exclusão temporária, garantindo que os recursos excluídos sejam retidos por 90 dias (por padrão) e possam ser recuperados, desfazendo efetivamente a exclusão por meio do portal do Azure.

@@ -32,13 +32,15 @@ As DCRs (regras de coleta de dados) especificam os dados a serem coletados, enqu
 
 >**Observação**: crie a regra de coleta de dados na mesma região que o workspace do Log Analytics ou o workspace do Azure Monitor. Você pode associá-la a computadores ou contêineres de qualquer assinatura ou grupo de recursos no locatário. O Agente do Azure Monitor será instalado automaticamente nos recursos virtuais do Azure.
 
-1. Na caixa de pesquisa na parte superior do portal, digite **regras de coleta de dados**. Selecione **Regras de coleta de dados** nos resultados da pesquisa.
+1. Abra uma sessão do navegador e entre no [menu do portal do Azure](https://portal.azure.com/).
   
-2. Na página **Regras de coleta de dados**, clique em **+ Criar**.
+3. Na caixa de pesquisa na parte superior do portal, digite **regras de coleta de dados**. Selecione **Regras de coleta de dados** nos resultados da pesquisa.
   
-   ![imagem](https://github.com/user-attachments/assets/99b9ac51-f2f4-466f-80bb-79d74874b573)
+4. Na página **Regras de coleta de dados**, clique em **+ Criar**.
+  
+    ![imagem](https://github.com/user-attachments/assets/a472bc6f-fa96-4615-a67c-c99e8b9ce7a4)
 
-3. Na página **Básico** da **folha Criar regra de coleta de dados**, especifique as seguintes configurações (deixe as outras com os valores padrão):
+5. Na página **Básico** da **folha Criar regra de coleta de dados**, especifique as seguintes configurações (deixe as outras com os valores padrão):
 
     |Configuração|Valor|
     |---|---|
@@ -50,29 +52,29 @@ As DCRs (regras de coleta de dados) especificam os dados a serem coletados, enqu
     |Tipo de Plataforma|**Windows**|
     |Ponto de extremidade da coleta de dados|Mantenha a configuração padrão como nenhum|
 
-    ![imagem](https://github.com/user-attachments/assets/35c527cf-499d-44b9-966f-0114b8643ef2)
+   ![imagem](https://github.com/user-attachments/assets/6c63c48f-f7a9-4fb2-8fc0-e22084cd5013)
 
-4. Clique no botão na parte inferior da página **Básico** rotulado **Avançar: Recursos >** para continuar.
+6. Clique no botão na parte inferior da página **Básico** rotulado **Avançar: Recursos >** para continuar.
    
-5. Na página **Recursos**, clique em **+ Adicionar recursos**.
+7. Na página **Recursos**, clique em **+ Adicionar recursos**.
 
-    ![imagem](https://github.com/user-attachments/assets/6aabf2c9-bea2-47c1-9b0b-bf131cdec4e3)
+   ![imagem](https://github.com/user-attachments/assets/7e45996b-478b-4be4-9df3-df6127da6cb4)
 
-6. No modelo **Selecionar um escopo**, marque a caixa **Assinatura** no **Escopo**.
+8. No modelo **Selecionar um escopo**, marque a caixa **Assinatura** no **Escopo**.
 
-    ![imagem](https://github.com/user-attachments/assets/2215e8cd-5047-4fc6-91ba-b2c645571bbd)
+   ![imagem](https://github.com/user-attachments/assets/0d228e47-039e-4418-ae66-025957e368bc)
 
-7. Na parte inferior do modelo **Selecionar um escopo**, clique em **Aplicar**.
+9. Na parte inferior do modelo **Selecionar um escopo**, clique em **Aplicar**.
   
-8. Na parte inferior da página **Recursos**, clique em **Avançar: Coletar e entregar >**.
+10. Na parte inferior da página **Recursos**, clique em **Avançar: Coletar e entregar >**.
 
-    ![imagem](https://github.com/user-attachments/assets/717226c3-5ce0-454f-93a4-11b0e67d5a23)
+    ![imagem](https://github.com/user-attachments/assets/95556211-654f-4810-98a0-5cd8fac13bff)  
 
-9. Na página **Coletar e entregar**, clique em **+ Adicionar fonte de dados**.
+11. Na página **Coletar e entregar**, clique em **+ Adicionar fonte de dados**.
 
-    ![imagem](https://github.com/user-attachments/assets/0809cf5b-a460-40d1-8508-e42ba7ce78c1)
+    ![imagem](https://github.com/user-attachments/assets/8274b0c1-8617-4889-9aef-78e050f2bd00)
 
-10. No modelo **Adicionar fonte de dados**, em **Tipo de fonte de dados**, selecione as configurações a seguir.
+12. No modelo **Adicionar fonte de dados**, em **Tipo de fonte de dados**, selecione as configurações a seguir:
     
     |Configuração|Valor|
     |---|---|
@@ -85,11 +87,11 @@ As DCRs (regras de coleta de dados) especificam os dados a serem coletados, enqu
     |Segurança|**Auditoria realizada**, **Falha na auditoria**|
     |Sistema|**Crítico**, **Erro**, **Aviso**|
 
-    ![imagem](https://github.com/user-attachments/assets/5bc891ea-8cef-4baa-95c4-a432364179b1)
+    ![imagem](https://github.com/user-attachments/assets/33039994-0613-40f4-9c55-03f795b38b9b)
 
-12. Na parte inferior do modelo **Adicionar fonte de dados**, clique em **Avançar: Destino >**.
-   
-13. No modelo **Adicionar fonte de dados**, na guia **Destino**, selecione as configurações a seguir.
+13. Na parte inferior do modelo **Adicionar fonte de dados**, clique em **Avançar: Destino >**.
+
+14. No modelo **Adicionar fonte de dados**, na guia **Destino**, selecione as configurações a seguir.
     
     |Configuração|Valor|
     |---|---|
@@ -99,16 +101,16 @@ As DCRs (regras de coleta de dados) especificam os dados a serem coletados, enqu
     |Assinatura|Selecione sua Assinatura.|
     |Detalhes do Destino|**azwrkspc1a (az-rg-1**)|
 
-    ![imagem](https://github.com/user-attachments/assets/e00c17c8-5a70-4caa-8504-92f482cc5e57)
+     ![imagem](https://github.com/user-attachments/assets/dc2d2906-4a57-4df9-a33c-fd6ae34a8457)
 
-14. Na parte inferior do modelo **Adicionar fonte de dados**, selecione **Adicionar fonte de dados**.
+15. Na parte inferior do modelo **Adicionar fonte de dados**, selecione **Adicionar fonte de dados**.
+
+16. Na parte inferior da página **Coletar e entregar**, selecione **Revisar + criar**.
 
     ![imagem](https://github.com/user-attachments/assets/4277089c-971c-4334-a49d-6ac6bfe93ff4)
 
-15. Na parte inferior da página **Coletar e entregar**, selecione **Revisar + criar**.
+17. Na parte inferior da página **Revisar + criar** clique em **Criar**.
 
-    ![imagem](https://github.com/user-attachments/assets/0235fed9-6309-444c-9269-b9dbd1118b63)
-
-16. Na parte inferior da página **Revisar + criar** clique em **Criar**.
+    ![imagem](https://github.com/user-attachments/assets/b532f92e-af10-4b4d-bb52-10d15ad38d4a)
 
 > **Resultados**: você criou uma regra de coleta de dados e instalou o Agente do Azure Monitor.

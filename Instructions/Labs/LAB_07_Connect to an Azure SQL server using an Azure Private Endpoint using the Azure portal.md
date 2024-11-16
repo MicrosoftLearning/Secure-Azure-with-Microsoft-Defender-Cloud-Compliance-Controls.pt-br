@@ -30,7 +30,7 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
 
 1. Abra uma sessão do navegador e entre no [menu do portal do Azure](https://portal.azure.com/).
    
-2. Na caixa de pesquisa na parte superior do portal, digite **Redes virtuais**. Selecione **Redes virtuais** nos resultados da pesquisa.
+2. Na caixa de pesquisa, na parte superior do portal, digite **redes virtuais**. Selecione **Redes virtuais** nos resultados da pesquisa.
 
 3. Na página **Redes virtuais**, selecione **+ Criar**.
 
@@ -121,11 +121,9 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
    |---|---|
    |**Interface de rede**|
    |Rede virtual|Selecione **vnet-2**.|
-   |Sub-rede|Selecione **subnet-2 (10.0.0.0/24).**|
-   |IP público|Selecione **Nenhum**.|
-   |Grupo de segurança de rede da NIC|Selecione **Básico**.|
-   |Porta de entrada públicas|Selecione **Nenhum**.|
-   |Selecione as portas de entrada|A configuração padrão está esmaecida.|
+   |Sub-rede|Deixe a configuração padrão como sub-rede-2 (10.0.0.0/24).|
+   |IP público|Deixe a configuração padrão como (novo) vm-3-ip.|
+   |Grupo de segurança de rede da NIC|Mantenha a configuração padrão como Nenhum.|
    |Excluir o adaptador de rede quando a VM é excluída|Deixe a configuração padrão como Habilitar rede acelerada marcada.|
    |Balanceamento de carga|Mantenha a configuração padrão como Nenhum.|
   
@@ -189,25 +187,25 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
 
 10. Em **Criar ponto de extremidade privado**, insira ou selecione estas informações:
 
-   |Configuração|Valor|
-   |---|---|
-   |Subscription|Selecione sua assinatura.|
-   |Resource group|Selecione **az-rg-1**.|
-   |Localidade|Selecione **Leste dos EUA**.|
-   |Nome|Insira **az-pe1a.**|
-   |Sub-recurso de destino|Deixe a configuração padrão como SqlServer.|
-   |**Rede**|
-   |Rede virtual|Selecione **vnet-2**.|
-   |Sub-rede|Selecione **subnet-2.**|
-   |**Integração de DNS privado**|
-   |Integrar com a zona de DNS privado|Deixe a configuração padrão como Sim.|
-   |Zona DNS privado|Deixe a configuração padrão como (Novo) privatelink.database.windows.net.|
+       |Configuração|Valor|
+       |---|---|
+       |Subscription|Selecione sua assinatura.|
+       |Resource group|Selecione **az-rg-1**.|
+       |Localidade|Selecione **Leste dos EUA**.|
+       |Nome|Insira **az-pe1a.**|
+       |Sub-recurso de destino|Deixe a configuração padrão como SqlServer.|
+       |**Rede**|
+       |Rede virtual|Selecione **vnet-2**.|
+       |Sub-rede|Selecione **subnet-2.**|
+       |**Integração de DNS privado**|
+       |Integrar com a zona de DNS privado|Deixe a configuração padrão como Sim.|
+       |Zona DNS privado|Deixe a configuração padrão como (Novo) privatelink.database.windows.net.|
 
-11. Selecione **OK**.
+12. Selecione **OK**.
 
-12. Selecione **Examinar + criar**.
+13. Selecione **Examinar + criar**.
 
-13. Selecione **Criar**.
+14. Selecione **Criar**.
 
 >**Observação**: a implantação do servidor do SQL do Azure e do ponto de extremidade privado pode levar até dez minutos para a instanciação completa.
 
@@ -226,10 +224,10 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
 >**Observação**: as conexões dos endereços IP configuradas na seção Regras de firewall abaixo terão acesso a este banco de dados. Por padrão, nenhum endereço IP público é permitido.
 
 5. Se necessário, vá para a seção **Regras de firewall** na página **Rede** e selecione **+ Adicionar o endereço IPv4 do cliente** se o endereço IP do cliente ainda não estiver preenchido nos campos **Nome da regra**,**Endereço IPv4 inicial** e **Endereço IPv4 final**.
-    
-     ![imagem](https://github.com/user-attachments/assets/dfdeffca-d33f-44e1-81db-9f68a51f89df)
 
-6. Se necessário, clique em **Salvar**.
+   ![imagem](https://github.com/user-attachments/assets/fff5bfb1-53fd-40ea-9a31-5a095e7f3dbc) 
+
+7. Selecione **Salvar**.
 
 ### Testar a conectividade com o ponto de extremidade privado
 
@@ -241,48 +239,49 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
 
 3. Insira o nome de usuário **Tenantadmin2** e a senha **Superuser#170** que você inseriu durante a criação da máquina virtual.
 
-   **Importante:** vá para as configurações de Borda/Pop-ups e redirecionamentos/e alterne a opção Bloqueado para **desativado** antes de selecionar Conectar.
+   **Importante:** Importante: acesse as configurações do Edge e navegue até **Pop-ups e redirecionamentos**. Selecione a opção radial rotulada **Sempre permitir pop-ups e redirecionamentos de https://portal.azure.com** e clique em **Concluído**.
 
 4. Selecione o botão **Conectar**.
   
 5. Abra o Windows PowerShell no servidor depois de se conectar.
 
-6. Substitua **sqlserver-name** pelo nome do SQL Server criado nas etapas anteriores. Por exemplo, insira **nslookup az-sql-srv1a.database.windows.net**. Você receberá uma mensagem semelhante à mostrada abaixo:
+6. Para verificar a resolução de nomes do ponto de extremidade privado, insira o seguinte comando na janela do terminal:
+
+   ```bash
+   nslookup server-name.database.windows.net
+
+>**Note**: Replace **sqlserver-name** with the name of the SQL server you created in the previous steps. For example, enter **nslookup az-sql-srv1a.database.windows.net** You’ll receive a message similar to the one shown below:
 
    ````
    
-   Server:  UnKnown
-   Address:  168.63.129.16
+   Servidor: Endereço desconhecido: 168.63.129.16
    
-   Non-authoritative answer:
-   Name:    az-sql-srv1a.privatelink.database.windows.net
-   Address:  10.1.0.5
-   Aliases:  az-sql-srv1a.database.windows.net
+   Resposta não autoritativa: Nome: az-sql-srv1a.privatelink.database.windows.net Endereço: 10.1.0.5 Aliases: az-sql-srv1a.database.windows.net
    ````
    
->**Observação**: o endereço IP privado 10.1.0.5 é retornado para o nome do SQL Server. Esse endereço está na sub-rede **az-sql-srv1a** da rede virtual **vnet-2** criada anteriormente.
+>**Note**: A  private IP address of 10.1.0.5 is returned for the SQL server name. This address is in **az-sql-srv1a** subnet of **vnet-2** virtual network you created previously.
 
-7. Instale o [SSMS (SQL Server Management Studio)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) em **vm-3**.
+7. Install [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?preserve-view=true&amp;view=sql-server-2017) on **vm-3.**
  
-8. Abra o **SQL Server Management Studio**.
+8. Open **SQL Server Management Studio.**
 
-9. Em **Conectar-se ao servidor**, insira ou selecione estas informações:
+9. In **Connect to server,** enter or select this information:
 
-    |Configuração|Valor|
+    |Setting|Value|
     |---|---|
-    |Tipo de servidor|Selecione **Mecanismo de Banco de Dados**.|
-    |Nome do servidor|Insira **az-sql-srv1a.database.windows.net**.|
-    |Autenticação|Selecione **Autenticação do SQL Server**.|
-    |Nome de usuário|Insira **Tenantadmin2**.|
-    |Senha|Insira **Superuser#170**.|
-    |Lembrar senha|Selecione **Sim**.|
-    |Segurança da conexão|
-    |Criptografia|Deixe a configuração padrão como Obrigatório.|
+    |Server type|Leave the default setting as Database Engine.|
+    |Server name|Enter **az-sql-srv1a.database.windows.net.**|
+    |Authentication|Select **SQL Server Authentication.**|
+    |User name|Enter **Tenantadmin2**.|
+    |Password|Enter **Superuser#170**.|
+    |Remember password|Select **Yes.**|
+    |Connectivity Security|
+    |Encryption|Leave the default setting as Mandatory.|
    
-10. Selecione **Conectar**.
+10. Select **Connect.**
 
-11. Procurar bancos de dados no menu à esquerda.
+11. Browse databases from left menu.
 
-12. Feche a conexão da área de trabalho remota da vm-3.
+12. Close the remote desktop connection to vm-3.
   
-> **Resultados**: você se conectou a um SQL Server do Azure por meio de um Ponto de Extremidade Privado do Azure usando o portal do Azure.
+> **Results**: You have connected to an Azure SQL server using an Azure Private Endpoint using the Azure portal.

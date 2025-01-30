@@ -48,7 +48,7 @@ As DCRs (regras de coleta de dados) especificam os dados a serem coletados, enqu
     |Nome da Regra|**dcr-1**|
     |Assinatura|Selecione sua assinatura.|
     |Resource group|**az-rg-1**|
-    |Region|**Leste dos EUA**|
+    |Região|**Leste dos EUA**|
     |Tipo de Plataforma|**Windows**|
     |Ponto de extremidade da coleta de dados|Mantenha a configuração padrão como nenhum|
 
@@ -98,7 +98,7 @@ As DCRs (regras de coleta de dados) especificam os dados a serem coletados, enqu
     |**Adicionar fonte de dados**|
     |Destino|**+ Adicionar destino**|
     |Tipo de destino|**Logs do Azure Monitor**|
-    |Assinatura|Selecione sua Assinatura.|
+    |Subscription|Selecione sua Assinatura.|
     |Detalhes do Destino|**azwrkspc1a (az-rg-1**)|
 
      ![imagem](https://github.com/user-attachments/assets/dc2d2906-4a57-4df9-a33c-fd6ae34a8457)

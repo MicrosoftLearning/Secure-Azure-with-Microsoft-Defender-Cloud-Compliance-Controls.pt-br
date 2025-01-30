@@ -213,7 +213,7 @@ Um NSG (grupo de segurança de rede) protege o tráfego de rede na sua rede virt
    |Opções de disponibilidade|No menu suspenso Zona de disponibilidade, selecione **Não é necessária redundância de infraestrutura.**|
    |Tipo de segurança|No menu suspenso Tipo de segurança, selecione **Standard.**|
    |Imagem|No menu suspenso Imagem, selecione **Datacenter do Windows Server 2022: Edição do Azure – x64 Gen2**.|
-   |Arquitetura de VMs|Deixe a configuração padrão como x64.|
+   |Arquitetura de VMs;|Deixe a configuração padrão como x64.|
    |Executar com desconto do Spot do Azure|Deixe a configuração padrão desmarcada.|
    |Tamanho|Deixe a configuração padrão como vcpus Standard_D2s_v3-2, 8 GiB de memória.|
    |**Conta de administrador**|

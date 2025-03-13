@@ -191,7 +191,7 @@ Um ponto de extremidade privado do Azure é o bloco de construção básico para
        |---|---|
        |Subscription|Selecione sua assinatura.|
        |Resource group|Selecione **az-rg-1**.|
-       |Localidade|Selecione **Leste dos EUA**.|
+       |Location|Selecione **Leste dos EUA**.|
        |Nome|Insira **az-pe1a.**|
        |Sub-recurso de destino|Deixe a configuração padrão como SqlServer.|
        |**Rede**|
